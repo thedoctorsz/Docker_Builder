@@ -60,7 +60,7 @@ RUN git clone --depth 1 https://github.com/ninja-build/ninja.git .ninja \
     && cd .ninja && ./configure.py --bootstrap \
     && sudo install ./ninja /usr/bin/ninja
 
-RUN git clone --depth 1 https://github.com/google/kati.git .kati \
+RUN git clone --depth 1 https://github.com/zacky46/kati.git -b test .kati \
     && cd .kati && make ckati \
     && sudo install ./ckati /usr/bin/ckati
 
